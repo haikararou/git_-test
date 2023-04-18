@@ -1,6 +1,7 @@
 on:
   workflow_dispatch:
-branches: [ main ]
+    branches:
+      - main
 name: Main-Deploy
 jobs:
   FTP-Deploy-Action:
