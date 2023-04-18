@@ -1,6 +1,7 @@
 on:
   workflow_dispatch:
-name: Deploy
+branches: [ main ]
+name: Main-Deploy
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
@@ -14,4 +15,4 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
           LOCAL_DIR: ./
-          REMOTE_DIR: /xs384462.xsrv.jp/public_html/git_ main/
+          REMOTE_DIR: /xs384462.xsrv.jp/public_html/git_main/
